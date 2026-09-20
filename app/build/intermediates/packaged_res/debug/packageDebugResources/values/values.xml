@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#0D0B1A</color>
+    <color name="ic_launcher_background">#6200EE</color>
+    <color name="ic_launcher_bg_dark">#07011A</color>
+    <color name="purple_primary">#6C3CE9</color>
+    <color name="surface_card">#1A1730</color>
+    <color name="teal_accent">#2DD9C7</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#A0A0C0</color>
+    <string name="accessibility_service_description">এই সার্ভিসটি অ্যাপ ব্যবহারের সময় ট্র্যাক করে এবং নির্ধারিত সময়সীমা পার হলে অ্যাপ ব্লক করে।</string>
+    <string name="app_name">Time Limiter</string>
+    <style name="Theme.TimeLimiter" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryDark">@color/bg_dark</item>
+        <item name="colorAccent">@color/teal_accent</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+    </style>
+</resources>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/layoutHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/header_icon_bg"
+                        android:padding="8dp"
+                        android:src="@android:drawable/ic_menu_recent_history"
+                        android:layout_marginEnd="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time Limiter"
+                            android:textColor="@color/text_primary"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Better Control • A Healthier You"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/btnNotification"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/card_background"
+                        android:padding="9dp"
+                        android:src="@android:drawable/ic_popup_reminder"
+                        android:layout_marginEnd="8dp" />
+
+                    <ImageButton
+                        android:id="@+id/btnSettings"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/card_background"
+                        android:padding="9dp"
+                        android:src="@android:drawable/ic_menu_manage" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/card_background"
+                    android:padding="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <com.hunterxsy.timelimiter.CircularProgressView
+                        android:id="@+id/circularProgressHome"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_marginEnd="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Small steps"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="make big changes."
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="10dp" />
+
+                        <TextView
+                            android:id="@+id/txtActiveLimitsCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/teal_accent"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/card_background"
+                    android:padding="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="App Package Name"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="13sp"
+                        android:layout_marginBottom="6dp" />
+
+                    <Button
+                        android:id="@+id/btnChooseApp"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Choose App from List"
+                        android:textColor="@color/text_primary"
+                        android:backgroundTint="@color/teal_accent"
+                        android:layout_marginBottom="12dp" />
+
+                    <EditText
+                        android:id="@+id/editPackageName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="com.instagram.android"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"
+                        android:background="@drawable/input_background"
+                        android:padding="12dp"
+                        android:layout_marginBottom="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daily Limit (minutes)"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="13sp"
+                        android:layout_marginBottom="6dp" />
+
+                    <EditText
+                        android:id="@+id/editMinutes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="60"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"
+                        android:background="@drawable/input_background"
+                        android:padding="12dp"
+                        android:layout_marginBottom="20dp" />
+
+                    <Button
+                        android:id="@+id/btnSetLimit"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="Set Limit"
+                        android:textColor="@color/text_primary"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/purple_primary"
+                        android:layout_marginBottom="12dp" />
+
+                    <Button
+                        android:id="@+id/btnOpenAccessibility"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="Enable Accessibility Permission"
+                        android:textColor="@color/text_primary"
+                        android:backgroundTint="@color/surface_card" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="App Limits"
+                    android:textColor="@color/text_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerLimits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginBottom="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/card_background"
+                    android:padding="18dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Stay Focused"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Less screen time • More real life"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keep Going →"
+                        android:textColor="@color/teal_accent"
+                        android:textStyle="bold"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            android:id="@+id/includeStatistics"
+            layout="@layout/layout_statistics" />
+
+        <include
+            android:id="@+id/includeSchedule"
+            layout="@layout/layout_schedule" />
+
+        <include
+            android:id="@+id/includeProfile"
+            layout="@layout/layout_profile" />
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface_card"
+        app:itemIconTint="@color/teal_accent"
+        app:itemTextColor="@color/teal_accent"
+        app:menu="@menu/bottom_nav_menu"
+        xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+</LinearLayout>

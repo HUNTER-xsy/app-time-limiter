@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Time Limiter</string>
+    <string name="accessibility_service_description">এই সার্ভিসটি অ্যাপ ব্যবহারের সময় ট্র্যাক করে এবং নির্ধারিত সময়সীমা পার হলে অ্যাপ ব্লক করে।</string>
+</resources>
